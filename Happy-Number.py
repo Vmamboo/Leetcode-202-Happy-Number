@@ -1,16 +1,16 @@
 
 def isHappy(self, n: int) -> bool:
     # Set to store seen numbers to detect cycles
-    seen = set()
+    is_seen = set()
     
     # Loop until we encounter 1 (happy number) or a cycle
     while n != 1:
         # If we encounter a number we've seen before, it's not happy
-        if n in seen:
+        if n in is_seen:
             return False
         
         # Add current number to the set
-        seen.add(n)
+        is_seen.add(n)
         
         # Calculate the sum of squares of digits
         n_str = str(n)
