@@ -1,5 +1,5 @@
 
-def isHappy(self, n: int) -> bool:
+def isHappy(n):
     # Set to store seen numbers to detect cycles
     is_seen = set()
     
